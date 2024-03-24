@@ -1,16 +1,23 @@
+<script setup lang="ts">
+useHead({
+    title: 'pizzaApp',
+    meta: [{ name: 'description', content: 'My amazing site.' }],
+    bodyAttrs: {
+        class: 'test',
+    },
+});
+useSeoMeta({
+    title: 'My Amazing Site',
+    ogTitle: 'My Amazing Site',
+    description: 'This is my amazing site, let me tell you all about it.',
+    ogDescription: 'This is my amazing site, let me tell you all about it.',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+});
+</script>
+
 <template>
-    <div style="background-color: red; padding: 20px 0px; width: 100%"></div>
-    <div
-        style="
-            display: flex;
-            justify-content: center;
-            background-color: #45a1ff;
-            color: #fff;
-            position: absolute;
-            top: calc(100% - 25px);
-            width: 100%;
-        "
-    >
-        sdsafag
-    </div>
+    <NuxtLayout>
+        <NuxtPage />
+    </NuxtLayout>
 </template>
