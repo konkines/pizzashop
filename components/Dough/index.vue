@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps(['doughs']);
-const model = defineModel();
+const model = defineModel('selectedDough');
 </script>
 
 <template>
@@ -11,7 +11,7 @@ const model = defineModel();
                 v-for="el in doughs"
                 :key="el.id"
                 :dough="el"
-                v-model="model"
+                v-model:selectedDough="model"
             />
         </div>
     </div>

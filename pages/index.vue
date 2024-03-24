@@ -26,7 +26,7 @@ const selectedDough = ref(1);
         <div class="text-3xl font-bold">Конструктор пиццы</div>
         <Dough
             :doughs="doughs"
-            v-model="selectedDough"
+            v-model:selectedDough="selectedDough"
         />{{ selectedDough }}
         <div>
             <div>Выберите ингредиенты</div>

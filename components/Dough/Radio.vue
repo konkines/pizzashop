@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps(['dough']);
-const model = defineModel();
+const model = defineModel('selectedDough');
 </script>
 <template>
     <div>
