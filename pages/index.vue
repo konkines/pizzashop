@@ -23,30 +23,11 @@ const selectedDough = ref(1);
 </script>
 <template>
     <div class="px-44">
-        <div class="text-3xl font-bold">Конструктор пиццы</div>
+        <div class="text-3xl font-bold my-3">Конструктор пиццы</div>
         <Dough
             :doughs="doughs"
             v-model:selectedDough="selectedDough"
-        />{{ selectedDough }}
-        <div>
-            <div>Выберите ингредиенты</div>
-            <div>
-                <div>Основной соус</div>
-                <input
-                    type="radio"
-                    id="tomato"
-                    value="tomato"
-                    v-model="selectedSauce"
-                />
-                <label for="tomato">Томатный</label>
-                <input
-                    type="radio"
-                    id="cream"
-                    value="cream"
-                    v-model="selectedSauce"
-                />
-                <label for="cream">Сливочный</label>
-            </div>
-        </div>
+        />
+        <Ingredient />
     </div>
 </template>
