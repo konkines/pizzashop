@@ -1,14 +1,14 @@
 <script setup lang="ts">
 defineProps(['dough']);
-const model = defineModel('selectedDough');
+const selectedDough = defineModel('selectedDough');
 </script>
 <template>
     <div class="m-2">
-        <label class="dough inline-flex">
+        <label class="dough inline-flex items-center">
             <input
                 type="radio"
                 :value="dough.id"
-                v-model="model"
+                v-model="selectedDough"
                 class="dough-input hidden"
             />
             <img
